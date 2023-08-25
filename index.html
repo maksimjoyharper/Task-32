@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maksim task 32</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <p>Задание 1</p>
+    <form action="">
+        <label for="color">Please select a background color</label>
+        <select name="color" id="color">
+            <option value="blue">Blue</option>
+            <option value="green">Green</option>
+            <option value="orange">Orange</option>
+            <option value="grey">Grey</option>
+        </select>
+        <br>
+        <label for="lang">Please select a language</label>
+        <select name="language" id="lang">
+            <option value="Ru">Russian</option>
+            <option value="En">English</option>
+        </select>
+        <button type="button" onclick="changeInterface()">Apply</button>
+    </form>
+
+    <p id="par">Interface language</p>
+
+    <hr>
+    <p>Задание 2</p>
+
+    <form id="form" action="">
+        <input id="name" type="text" placeholder="Login" required>
+        <input id="email" type="email" placeholder="Email" required>
+        <button id="btn" type="submit">Submit</button>
+    </form>
+
+    <p>Задание 3</p>
+
+    <section class="container">
+        <h1>Магазин кухонной посуды</h1>
+        <div class="catalog">
+            <div class="products-box" id="chaynik">
+                <img src="./internet-shop/chaynik.jpg" alt="">
+                <div class="product-info">
+                    <p class="name">Чайник</p>
+                    <p class="articul">Артикул: 856</p>
+                    <p class="price">50р</p>
+                    <button id="btnChaynik" onclick="pickChaynik()" type="button">В корзину</button>
+                </div>
+            </div>
+            <div class="products-box" id="kastryulya">
+                <img src="./internet-shop/kastryulya.jpg" alt="">
+                <div class="product-info">
+                    <p class="name">Кастрюля</p>
+                    <p class="articul">Артикул: 245</p>
+                    <p class="price">70р</p>
+                    <button onclick="pickKastryulya()" id="btnKastryulya" type="button">В корзину</button>
+                </div>
+            </div>
+            <div class="products-box" id="skovorodka">
+                <img src="./internet-shop/skovorodka.jpg" alt="">
+                <div class="product-info">
+                    <p class="name">Сковорода</p>
+                    <p class="articul">Артикул: 986</p>
+                    <p class="price">40р</p>
+                    <button onclick="pickSkovorodka()" id="btnSkovorodka" type="button">В корзину</button>
+                </div>
+            </div>
+        </div>
+        <br>
+        <h2>Корзина</h2>
+        <div class="cart">
+            <div class="cart-name">
+                <h3>Товар:</h3>
+            </div>
+            <div class="cart-price">
+                <h3>Стоимость:</h3>
+            </div>
+
+        </div>
+        <button type="submit" id="btn-order">Сделать заказ!</button>
+
+    </section>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
